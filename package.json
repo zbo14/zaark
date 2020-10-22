@@ -8,7 +8,9 @@
     "postinstall": "sh scripts/gencert.sh",
     "doc": "jsdoc lib README.md",
     "lint": "eslint . lib",
+    "log": "pm2 logs server.js",
     "start": "pm2 start server.js",
+    "status": "pm2 status server.js",
     "stop": "pm2 stop server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
