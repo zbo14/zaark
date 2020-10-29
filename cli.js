@@ -20,6 +20,4 @@ const script = fs.readFileSync(path.join(dir, 'script.js'), 'utf8')
 
 const job = manager.addJob(config, script)
 
-job
-  .once('done', process.exit)
-  .scheduled || job.start()
+job.scheduled || job.start()
