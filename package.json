@@ -1,9 +1,14 @@
 {
   "name": "zaark",
   "version": "0.0.0",
+  "description": "Scheduled, configurable browser automation with reporting",
   "private": true,
   "bin": "cli.js",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbo14/zaark"
+  },
   "scripts": {
     "postinstall": "sh scripts/gencert.sh",
     "doc": "jsdoc lib README.md",

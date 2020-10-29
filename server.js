@@ -6,7 +6,7 @@ const Server = require('./lib/server')
 
 const privDir = path.join(__dirname, 'private')
 
-const apiKey = fs.readFileSync(path.join(privDir, 'api.key'))
+const apiKey = fs.readFileSync(path.join(privDir, 'api.key'), 'utf8').trim()
 const cert = fs.readFileSync(path.join(privDir, 'cert.pem'))
 const key = fs.readFileSync(path.join(privDir, 'key.pem'))
 
